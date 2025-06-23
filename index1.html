@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>ArcGIS JS Map</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://js.arcgis.com/4.29/"></script>
+  <style>
+    html, body, #viewDiv {
+      padding: 0; margin: 0; height: 100%; width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="mapTitle">Special places I've been to!</div>
+  <div id="legend">
+    <h4>Legend</h4>
+    <div><span class="legend-color" style="background: red;"></span> American place</div>
+    <div><span class="legend-color" style="background: green;"></span> Home-like place</div>
+    <div><span class="legend-color" style="background: blue;"></span> Big city</div>
+    <div><span class="legend-color" style="background: yellow;"></span> Vacation place</div>
+  </div>
+  <div id="viewDiv"></div>
+
+  <script>
+    require(["./map.js"]);
+  </script>
+</body>
+</html>
